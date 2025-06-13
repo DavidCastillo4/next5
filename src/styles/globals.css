@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.notActive {
+ @apply text-black hover:text-blue-600;
+ background-color: pink; 
+}

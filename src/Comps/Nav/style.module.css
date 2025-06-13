@@ -1,0 +1,11 @@
+
+
+.isActive {
+  @apply font-bold text-blue-600 border-b-2 border-blue-600;
+  background-color: green; /* Just for testing */
+}
+
+.notActive3 {
+  @apply text-black hover:text-blue-600;
+  background-color: yellow; /* Just for testing */
+}
