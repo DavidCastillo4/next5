@@ -10,8 +10,8 @@ export let Navigation = () => {
  return (
   <nav>
    <Link className={s.isActive} href='/' >Home</Link>
-   <Link className='notActive' href='/' >Home</Link>
-   <Link className={s.notActive3} href='/' >Home</Link>
+   <Link className='notActive' href='/Contact' >Contact</Link>
+   <Link className={s.notActive3} href='/Dashboard' >Dashboard</Link>
    {/* <Link className={notActive} href='/Contact' >Contact</Link>
    <Link className={isActive} href='/Product' >Product</Link> */}
   </nav>
