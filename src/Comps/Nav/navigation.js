@@ -12,8 +12,6 @@ export let Navigation = () => {
    <Link className={s.isActive} href='/' >Home</Link>
    <Link className='notActive' href='/Contact' >Contact</Link>
    <Link className={s.notActive3} href='/Dashboard' >Dashboard</Link>
-   {/* <Link className={notActive} href='/Contact' >Contact</Link>
-   <Link className={isActive} href='/Product' >Product</Link> */}
   </nav>
  )
 };
