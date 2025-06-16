@@ -5,16 +5,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
  return (
-  <html lang="en">
-   <body>
+  <>
+
     <header className="bg-slate-400 text-white text-center">
-     <p>My Dash</p>
+     <p>Dashboard Header</p>
     </header>
     {children}
     <footer className="bg-amber-300 text-white text-center">
      <p>Dashboard Footer</p>
     </footer>
-   </body>
-  </html>
+
+  </>
  );
 }
