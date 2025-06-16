@@ -1,19 +1,13 @@
-import { createServer } from 'http';
-import { parse } from 'url';
-import next from 'next';
+const { createServer } = require('http');
+const { parse } = require('url');
+const next = require('next');
+require('dotenv').config();
 
-const port = 3117; 
-//const dev = false;
-//console.log(dev)
-//const app = next({ dev });
-const app = next({
- dev: false,
- // conf: {
- //   basePath: '/next5',
- //   assetPrefix: '/next5',
- // },
-});
+const dev = false; 
+const hostname = 'localhost';
+const port = process.env.PORT || 3117;
 
+const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
@@ -21,6 +15,6 @@ app.prepare().then(() => {
     const parsedUrl = parse(req.url, true);
     handle(req, res, parsedUrl);
   }).listen(port, () => {
-    console.log(`> Ready on http://localhost:${port}`);
+    console.log(`> Ready on http://${hostname}:${port}`);
   });
 });
