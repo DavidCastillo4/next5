@@ -3,8 +3,8 @@ import { parse } from 'url';
 import next from 'next';
 
 const port = 3117; // YOUR port
-const dev = false;  //process.env.NODE_ENV !== 'production';
-console.log(dev)
+//const dev = false;  //process.env.NODE_ENV !== 'production';
+//console.log(dev)
 //const app = next({ dev });
 const app = next({
  dev: false,
