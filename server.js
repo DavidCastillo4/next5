@@ -8,10 +8,10 @@ const port = 3117;
 //const app = next({ dev });
 const app = next({
  dev: false,
- conf: {
-   basePath: '/next5',
-   assetPrefix: '/next5',
- },
+ // conf: {
+ //   basePath: '/next5',
+ //   assetPrefix: '/next5',
+ // },
 });
 
 const handle = app.getRequestHandler();
