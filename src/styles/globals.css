@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.globalPink {
+ @apply bg-pink-200;
+}
 
-.notActive {
- @apply text-black hover:text-blue-600;
- background-color: pink; 
+.globalBlue {
+ @apply bg-blue-300
 }

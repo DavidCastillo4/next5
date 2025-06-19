@@ -1,17 +1,21 @@
+/*navigation.js*/
 'use client'
 import Link from 'next/link'
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import s from  './style.module.css';
+import css from './style.module.css';
 
 export let Navigation = () => {
  let pathname = usePathname();
  useEffect(() => { console.log(pathname) }, [pathname]);
  return (
   <nav>
-   <Link className={s.isActive} href='/' >Home</Link>
-   <Link className='notActive' href='/Contact' >Contact</Link>
-   <Link className={s.notActive3} href='/Dashboard' >Dashboard</Link>
+   <Link className={css.moduleGreen} href='/' >Home</Link>
+   <Link className='globalPink' href='/Contact' >Contact</Link>
+   <Link className={css.moduleYellow} href='/Dashboard' >Dashboard</Link>
+   <Link className={css.moduleRed} href='/Product' >Product</Link>
+   <Link className='globalBlue' href='/Login' >Login</Link>
+   <Link className='bg-gray-200' href='/register' >Register</Link>
   </nav>
  )
 };

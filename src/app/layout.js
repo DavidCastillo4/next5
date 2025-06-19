@@ -1,5 +1,6 @@
 import '@/styles/globals.css';
 import { Navigation } from '@/Comps/Nav/navigation';
+import { MyFooter } from '@/Comps/Footer/footer';
 
 const isVercel = process.env.VERCEL === '1';
 
@@ -18,9 +19,7 @@ export default function RootLayout({ children }) {
      <Navigation />
     </header>
     {children}
-    <footer className="bg-amber-600 text-white text-center">
-     <p>Footer</p>
-    </footer>
+    <MyFooter />
    </body>
   </html>
  );

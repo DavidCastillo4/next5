@@ -1,3 +1,4 @@
+/*next.config.mjs*/
 const isVercel = process.env.VERCEL === '1';
 
 const nextConfig = {
