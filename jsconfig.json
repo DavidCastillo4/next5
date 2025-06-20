@@ -1,5 +1,22 @@
 /*jsconfig.json*/
 {
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+
+/*
+
+
+*/
+
+
+
+/*
+
+{
  "compilerOptions": {
   "baseUrl": ".", // <-- This tells it where to resolve from
   "paths": {
@@ -8,15 +25,6 @@
    ] // <-- This sets up the alias
   }
  }
-}
-
-/*
-{
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
 }
 
 */
