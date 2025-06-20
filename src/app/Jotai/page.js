@@ -1,15 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useAtom } from 'jotai';
-import { countAtom } from '@/'
-
-
-
-
-
-
-
-
+import { countAtom } from '@/lib/state/global';
 import css from './style.module.css';
 
 export default function Jotai() {
