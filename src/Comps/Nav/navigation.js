@@ -18,7 +18,7 @@ export let Navigation = () => {
    <Link className={css.moduleYellow} href='/Dashboard' >Dashboard</Link>
    <Link className={css.moduleRed} href='/Product' >Product</Link>
    <Link className='globalBlue' href='/Login' >Login</Link>
-   <Link className='bg-gray-200' href='/register' >Register</Link>
+   <Link className='bg-gray-200' href='/Register' >Register</Link>
   </nav>
  )
 };
