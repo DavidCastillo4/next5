@@ -1,6 +1,6 @@
 'use client';
 import { useAtom } from 'jotai';
-import { countAtom } from '@/lib/state/global.js'
+import { countAtom } from '@/lib/state/global.js';
 
 export default function Jotai2() {
  let [cnt, setCnt] = useAtom(countAtom);
