@@ -25,11 +25,3 @@ export let getPool = async () => {
   }
   return pool;
 };
-
-export async function getData() {
- let pool = await getPool();
- let qry = `SELECT TOP 10 c.ClientId, c.ClientName FROM dbo.Client c`;
- let result = await pool.request().query(qry);
- //console.log(result)
- return result.recordset;
-}

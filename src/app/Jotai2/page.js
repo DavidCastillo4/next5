@@ -6,6 +6,8 @@ export default function Jotai2() {
  let [cnt, setCnt] = useAtom(countAtom);
 
  return <>
-  <button className='bg-gray-300' onClick={() => setCnt(i => i + 1)}>globalAtom {cnt}</button>
+  <button className='bg-gray-300'
+   onClick={() => setCnt(i => i + 1)}>globalAtom {cnt}
+  </button>
  </>
 }

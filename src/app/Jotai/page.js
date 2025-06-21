@@ -9,8 +9,12 @@ export default function Jotai() {
  let [global, setGlobal] = useAtom(countAtom);
 
  return <>
-  <button className={css.btn} onClick={() => setLocal(i => i + 1)}>useState {local}</button>
+  <button className={css.btn}
+   onClick={() => setLocal(i => i + 1)}>useState {local}
+  </button>
   <br />
-  <button className={css.btn} onClick={() => setGlobal(i => i + 1)}>Jotai {global}</button>
+  <button className={css.btn}
+   onClick={() => setGlobal(i => i + 1)}>Jotai {global}
+  </button>
  </>
 }
