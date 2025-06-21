@@ -14,7 +14,7 @@ export let Navigation = () => {
    <Link className='globalPink' href='/Contact' >Contact</Link>
    <Link className='bg-amber-500' href='/Jotai' >Jotai</Link>
    <Link className='bg-green-500' href='/Jotai2' >Jotai2</Link>
-   <Link className='bg-slate-300' href='/Client' >Client</Link>
+   <Link className='bg-slate-300' href='/client' >Client</Link>
    <Link className={css.moduleYellow} href='/Dashboard' >Dashboard</Link>
    <Link className={css.moduleRed} href='/Product' >Product</Link>
    <Link className='globalBlue' href='/Login' >Login</Link>
